@@ -84,8 +84,11 @@ Windows 11 Build 22000 or later.
 
 1. In the JMeter GUI, explore the test, run it, and explore the results (in the explorer of the JMeter GUI, navigate Test Plan/Thread Group/View Results Tree).
 
+   ![JMeter Results](./media/jmeter-results.png)
+
    This is of course a very simple test and it relies on the application being available on the local machine. In the real world we would advance this by at least...
       
-      * Making sure we have an instance of our app deployed to a production-like environment, ...
+      * Making sure we have an instance of our app deployed to a production-like environment.
       * Parameterizing the test so that it can work with different URLs.
-      * Run the load test in an actual load test service like [Azure Load Testing Service](https://docs.microsoft.com/en-us/azure/load-testing/overview-what-is-azure-load-testing).
+      * Running the load test in an actual load test service like [Azure Load Testing Service](https://docs.microsoft.com/en-us/azure/load-testing/overview-what-is-azure-load-testing).
+      * Automating the process including pipelines creating the infrastructure, deploying the latest version of the application and running the load test (among other test types)...
