@@ -1,0 +1,12 @@
+<!doctype html>
+
+<head>
+</head>
+
+<body>
+    <title>Such a stupid app</title>
+    <form method="post">
+        {% if who_are_you %}<div>Okay. So you say you are {{ who_are_you }}. Really?</div>{% endif %}
+        <div><label>Who are you{% if who_are_you %} really{% endif %}? <input type="text" name="who_are_you"></label><input type="submit" value="Submit"></div>
+    </form>
+</body>
