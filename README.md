@@ -56,8 +56,9 @@ Windows 11 Build 22000 or later.
 
 1. Start a [terminal in VS Code](https://code.visualstudio.com/docs/editor/integrated-terminal). This should conveniently open a bash shell directly in the ``app`` folder in WSL.
 
-1. In the new terminal in VS Code, start the application:
+1. In the new terminal in VS Code, install the needed packages with pip and then start the application:
    ```sh
+   pip install -r requirements.txt
    python hello-world.py
    ```
    The app will listen on port 5000 on your host.
