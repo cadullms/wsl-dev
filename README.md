@@ -27,14 +27,13 @@ Windows 11 Build 22000 or later.
    git clone https://github.com/cadullms/wsl-dev
    cd wsl-dev
    ```
-1. In the WSL shell, execute the scripts in the ``init`` folder (``install-pwsh.sh`` is optional).
+1. In the WSL shell, execute the scripts in the ``init`` folder (``install-pwsh.sh`` is optional, ``source ~/.bashrc`` is needed so that the commands ``python`` and ``jmeter`` will work in this session already).
 
    ```sh
    cd init
-   chmod +x install-jmeter.sh
    ./install-jmeter.sh
-   chmod +x configure-python.sh
    ./configure-python.sh
+   source ~/.bashrc
    cd ..
    ```
 

@@ -14,7 +14,6 @@ if [ -z "$result" ]; then
   echo 'export JVM_ARGS="$JVM_ARGS -Dswing.plaf.metal.systemFont=Dialog-20"' >> ~/.bashrc
   echo 'export JVM_ARGS="$JVM_ARGS -Dswing.plaf.metal.userFont=Dialog-16"' >> ~/.bashrc
   echo 'export JVM_ARGS="$JVM_ARGS -Dswing.plaf.metal.smallFont=Dialog-16"' >> ~/.bashrc
-  source ~/.bashrc
 fi
 
 result=$( grep -e "# scaling settings" /opt/jmeter/bin/jmeter.properties )
