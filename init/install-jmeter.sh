@@ -1,4 +1,5 @@
 sudo apt update
+sudo apt install -y unzip
 sudo apt install -y --fix-missing openjdk-11-jdk
 wget https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.4.3.zip
 unzip -o apache-jmeter-5.4.3.zip
