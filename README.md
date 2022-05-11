@@ -62,7 +62,15 @@ Windows 11 Build 22000 or later.
    ```
    The app will listen on port 5000 on your host.
 
-1. Open a browser and test the application on ``http://127.0.0.1:5000``.
+1. On your original shell **in WSL**, type:
+
+   ```sh
+   explorer.exe http://127.0.0.1:5000
+   ```
+
+   This will open the default web browser **on Windows** and navigate to ``http://127.0.0.1:5000``, so that you can "test" the application.
+
+   This is another example of how WSL can start Windows processes.
 
 ### JMeter in WSL
 
@@ -92,3 +100,8 @@ Windows 11 Build 22000 or later.
       * Parameterizing the test so that it can work with different URLs.
       * Running the load test in an actual load test service like [Azure Load Testing Service](https://docs.microsoft.com/en-us/azure/load-testing/overview-what-is-azure-load-testing).
       * Automating the process including pipelines creating the infrastructure, deploying the latest version of the application and running the load test (among other test types)...
+
+## More to explore...
+* Running this in containers. Can a ``.devcontainer`` run GUI apps as well?
+* Exploring the git integration.
+* Installing VS Code extensions exclusively for this distro.
