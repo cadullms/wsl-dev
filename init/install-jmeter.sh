@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 sudo apt update
 sudo apt install -y unzip
 sudo apt install -y --fix-missing openjdk-11-jdk
